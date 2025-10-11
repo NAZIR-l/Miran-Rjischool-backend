@@ -11,7 +11,7 @@ async function bootstrap() {
     methods: ['GET','POST','PUT','PATCH','DELETE','OPTIONS'],
     allowedHeaders: ['Content-Type','Authorization']
   });
-  console.log(process.env.PORT ?? 3000);
-  await app.listen(process.env.PORT ?? 3000);
+  console.log(process.env.PORT ?? 3001);
+  await app.listen(process.env.PORT ?? 3001);
 }
 bootstrap();

@@ -1,0 +1,35 @@
+{
+  "title": "Priority and Right of Way - Example 2",
+  "version": 1,
+  "language": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single_choice",
+      "text": "At an uncontrolled intersection in the Netherlands, who has priority?",
+      "imageId": null,
+      "choices": [
+        { "id": "a", "text": "Traffic from the left" },
+        { "id": "b", "text": "Traffic from the right" },
+        { "id": "c", "text": "Pedestrians" }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "At uncontrolled intersections, traffic from the right has priority."
+    },
+    {
+      "id": "q2",
+      "type": "single_choice",
+      "text": "A yellow diamond sign indicates:",
+      "imageId": null,
+      "choices": [
+        { "id": "a", "text": "End of priority road" },
+        { "id": "b", "text": "Priority road" },
+        { "id": "c", "text": "Give way" }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "A yellow diamond indicates a priority road; you have right of way."
+    }
+  ]
+}
+
+

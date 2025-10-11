@@ -1,0 +1,116 @@
+{
+  "info": {
+    "name": "Miran Rijschool API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "c2f6ea10-3b39-4f5a-8eb0-collection"
+  },
+  "item": [
+    {
+      "name": "Programs",
+      "item": [
+        {
+          "name": "List Programs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/programs",
+              "host": ["{{baseUrl}}"],
+              "path": ["programs"]
+            }
+          }
+        },
+        {
+          "name": "Program Details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/programs/{{programId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["programs", "{{programId}}"]
+            }
+          }
+        },
+        {
+          "name": "My Programs (requires Bearer)",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{auth_token}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/programs/me/list",
+              "host": ["{{baseUrl}}"],
+              "path": ["programs", "me", "list"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Payments",
+      "item": [
+        {
+          "name": "Enroll and Pay (requires Bearer)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{auth_token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": { "mode": "raw", "raw": "" },
+            "url": {
+              "raw": "{{baseUrl}}/payments/enroll/{{programId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["payments", "enroll", "{{programId}}"]
+            }
+          }
+        },
+        {
+          "name": "Mollie Webhook (public)",
+          "request": {
+            "method": "POST",
+            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"tr_testpaymentid\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/payments/mollie/webhook",
+              "host": ["{{baseUrl}}"],
+              "path": ["payments", "mollie", "webhook"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Questions",
+      "item": [
+        {
+          "name": "Get Example Questions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/questions/{{exampleId}}?lang={{lang}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["questions", "{{exampleId}}"],
+              "query": [ { "key": "lang", "value": "{{lang}}" } ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:3001" },
+    { "key": "auth_token", "value": "" },
+    { "key": "programId", "value": "REPLACE_WITH_PROGRAM_UUID" },
+    { "key": "exampleId", "value": "REPLACE_WITH_EXAMPLE_UUID" },
+    { "key": "lang", "value": "en" }
+  ]
+}
+
+

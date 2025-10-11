@@ -1,0 +1,48 @@
+{
+  "title": "Basic Traffic Signs - Example 1",
+  "version": 1,
+  "language": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single_choice",
+      "text": "You see a triangular sign with a red border and an exclamation mark. What does it indicate?",
+      "imageId": null,
+      "choices": [
+        { "id": "a", "text": "Mandatory speed limit" },
+        { "id": "b", "text": "General danger / warning" },
+        { "id": "c", "text": "Dead-end street" }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "A red-bordered triangle with an exclamation mark is a general danger/warning sign."
+    },
+    {
+      "id": "q2",
+      "type": "single_choice",
+      "text": "A circular blue sign with a white arrow pointing right means:",
+      "imageId": null,
+      "choices": [
+        { "id": "a", "text": "Turn right prohibited" },
+        { "id": "b", "text": "Mandatory direction: right" },
+        { "id": "c", "text": "Give way to the right" }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Blue circular signs indicate mandatory directions; the arrow specifies the required direction."
+    },
+    {
+      "id": "q3",
+      "type": "single_choice",
+      "text": "What does a red circle with a white horizontal bar (no entry) mean?",
+      "imageId": null,
+      "choices": [
+        { "id": "a", "text": "One-way street" },
+        { "id": "b", "text": "No vehicles permitted" },
+        { "id": "c", "text": "No entry for all traffic from this direction" }
+      ],
+      "correctChoiceId": "c",
+      "explanation": "The sign indicates no entry from this direction for all traffic."
+    }
+  ]
+}
+
+

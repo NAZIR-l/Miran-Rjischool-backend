@@ -1,0 +1,22 @@
+{
+  "title": "Basisverkeersborden - Voorbeeld 1",
+  "version": 1,
+  "language": "nl",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single_choice",
+      "text": "Je ziet een driehoekig bord met rode rand en een uitroepteken. Wat betekent dit?",
+      "imageId": null,
+      "choices": [
+        { "id": "a", "text": "Verplichte snelheidslimiet" },
+        { "id": "b", "text": "Algemeen gevaar / waarschuwing" },
+        { "id": "c", "text": "Doodlopende weg" }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "Een driehoek met rode rand en uitroepteken duidt op algemeen gevaar/waarschuwing."
+    }
+  ]
+}
+
+

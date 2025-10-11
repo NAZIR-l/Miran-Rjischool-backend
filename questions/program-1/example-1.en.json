@@ -1,0 +1,22 @@
+{
+  "title": "Basic Traffic Signs - Example 1 (EN)",
+  "version": 1,
+  "language": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single_choice",
+      "text": "You see a triangular sign with a red border and an exclamation mark. What does it indicate?",
+      "imageId": null,
+      "choices": [
+        { "id": "a", "text": "Mandatory speed limit" },
+        { "id": "b", "text": "General danger / warning" },
+        { "id": "c", "text": "Dead-end street" }
+      ],
+      "correctChoiceId": "b",
+      "explanation": "A red-bordered triangle with an exclamation mark is a general danger/warning sign."
+    }
+  ]
+}
+
+
